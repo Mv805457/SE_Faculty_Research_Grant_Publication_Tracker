@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty Research Grant &amp; Publication Tracker - Architectural Diagram</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .diagram-card {
+      background: #ffffff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 1360px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: auto;
+    }
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="diagram-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 800" width="1320" height="800" style="background:#ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- UML Component Icon -->
+    <g id="uml-comp-icon">
+      <rect x="0" y="0" width="16" height="11" rx="1.5" fill="#edf4fa" stroke="#1e3d5c" stroke-width="1.3" />
+      <rect x="-3" y="2" width="5" height="2.4" rx="0.5" fill="#edf4fa" stroke="#1e3d5c" stroke-width="1.1" />
+      <rect x="-3" y="6.6" width="5" height="2.4" rx="0.5" fill="#edf4fa" stroke="#1e3d5c" stroke-width="1.1" />
+    </g>
+  </defs>
+
+  <!-- Title Block -->
+  <text x="32" y="44" font-size="25" font-weight="700" fill="#122b44" letter-spacing="-0.3">Faculty Research Grant &amp; Publication Tracker</text>
+  <text x="32" y="68" font-size="13" font-weight="400" fill="#586e80">Lab 3 | individual problem statement #09 | Madhav Vinod | PES1UG24CS254</text>
+
+  <!-- Outer Dashed Boundary Box -->
+  <rect x="22" y="96" width="1276" height="675" rx="14" fill="none" stroke="#8fa6b8" stroke-width="1.5" stroke-dasharray="6 5" />
+  <text x="40" y="122" font-size="10.5" font-weight="700" fill="#65798c" letter-spacing="1">PORTAL SOFTWARE AND INTEGRATIONS</text>
+
+  <!-- ==================== COMPONENTS ==================== -->
+
+  <!-- TOP ROW -->
+  <!-- 1. Faculty Portal (Top Left) -->
+  <g id="comp-faculty-portal" transform="translate(60, 160)">
+    <rect width="220" height="88" rx="10" fill="#edf4fa" stroke="#1e3d5c" stroke-width="2" />
+    <text x="14" y="24" font-size="11" fill="#4d6782">&lt;&lt;component&gt;&gt;</text>
+    <use href="#uml-comp-icon" x="188" y="14" />
+    <text x="110" y="52" font-size="16" font-weight="700" fill="#122b44" text-anchor="middle">Faculty Portal</text>
+    <text x="110" y="71" font-size="11.5" fill="#4d657d" text-anchor="middle">file claim / submit paper</text>
+  </g>
+
+  <!-- 2. Grant & Fund Service (Top Center) -->
+  <g id="comp-grant-service" transform="translate(535, 160)">
+    <rect width="250" height="88" rx="10" fill="#edf4fa" stroke="#1e3d5c" stroke-width="2" />
+    <text x="14" y="24" font-size="11" fill="#4d6782">&lt;&lt;component&gt;&gt;</text>
+    <use href="#uml-comp-icon" x="218" y="14" />
+    <text x="125" y="52" font-size="16" font-weight="700" fill="#122b44" text-anchor="middle">Grant &amp; Fund Service</text>
+    <text x="125" y="71" font-size="11.5" fill="#4d657d" text-anchor="middle">allocations, cap checks, balance</text>
+  </g>
+
+  <!-- 3. Dean Console (Top Right) -->
+  <g id="comp-dean-console" transform="translate(1035, 160)">
+    <rect width="220" height="88" rx="10" fill="#edf4fa" stroke="#1e3d5c" stroke-width="2" />
+    <text x="14" y="24" font-size="11" fill="#4d6782">&lt;&lt;component&gt;&gt;</text>
+    <use href="#uml-comp-icon" x="188" y="14" />
+    <text x="110" y="52" font-size="16" font-weight="700" fill="#122b44" text-anchor="middle">Dean Console</text>
+    <text x="110" y="71" font-size="11.5" fill="#4d657d" text-anchor="middle">grant approvals / cap override</text>
+  </g>
+
+  <!-- MIDDLE ROW -->
+  <!-- 4. Publication & Metrics Engine (Middle Left) -->
+  <g id="comp-pub-engine" transform="translate(180, 380)">
+    <rect width="240" height="88" rx="10" fill="#edf4fa" stroke="#1e3d5c" stroke-width="2" />
+    <text x="14" y="24" font-size="11" fill="#4d6782">&lt;&lt;component&gt;&gt;</text>
+    <use href="#uml-comp-icon" x="208" y="14" />
+    <text x="120" y="51" font-size="15.5" font-weight="700" fill="#122b44" text-anchor="middle">Publication Engine</text>
+    <text x="120" y="70" font-size="11.5" fill="#4d657d" text-anchor="middle">match paper to citations</text>
+  </g>
+
+  <!-- 5. Audit Ledger & Grant Store (Middle Center) -->
+  <g id="comp-grant-store" transform="translate(535, 380)">
+    <rect width="250" height="88" rx="10" fill="#edf4fa" stroke="#1e3d5c" stroke-width="2" />
+    <text x="14" y="24" font-size="11" fill="#4d6782">&lt;&lt;component&gt;&gt;</text>
+    <use href="#uml-comp-icon" x="218" y="14" />
+    <text x="125" y="51" font-size="15.5" font-weight="700" fill="#122b44" text-anchor="middle">Grant &amp; Audit Store</text>
+    <text x="125" y="70" font-size="11.5" fill="#4d657d" text-anchor="middle">grants, expenses, audit log</text>
+  </g>
+
+  <!-- 6. Co-Author Approval Service (Middle Right) -->
+  <g id="comp-coauthor-service" transform="translate(900, 380)">
+    <rect width="240" height="88" rx="10" fill="#edf4fa" stroke="#1e3d5c" stroke-width="2" />
+    <text x="14" y="24" font-size="11" fill="#4d6782">&lt;&lt;component&gt;&gt;</text>
+    <use href="#uml-comp-icon" x="208" y="14" />
+    <text x="120" y="51" font-size="15.5" font-weight="700" fill="#122b44" text-anchor="middle">Co-Author Service</text>
+    <text x="120" y="70" font-size="11.5" fill="#4d657d" text-anchor="middle">co-author consent / approvals</text>
+  </g>
+
+  <!-- BOTTOM ROW -->
+  <!-- 7. External Indexing Adapter (Bottom Left) -->
+  <g id="comp-indexing-adapter" transform="translate(180, 600)">
+    <rect width="240" height="88" rx="10" fill="#edf4fa" stroke="#1e3d5c" stroke-width="2" />
+    <text x="14" y="24" font-size="11" fill="#4d6782">&lt;&lt;component&gt;&gt;</text>
+    <use href="#uml-comp-icon" x="208" y="14" />
+    <text x="120" y="51" font-size="15.5" font-weight="700" fill="#122b44" text-anchor="middle">Indexing Adapter</text>
+    <text x="120" y="70" font-size="11.5" fill="#4d657d" text-anchor="middle">Scopus / WoS / CrossRef sync</text>
+  </g>
+
+  <!-- 8. Burn-Up Analytics Engine (Bottom Center) -->
+  <g id="comp-burnup-engine" transform="translate(535, 600)">
+    <rect width="250" height="88" rx="10" fill="#edf4fa" stroke="#1e3d5c" stroke-width="2" />
+    <text x="14" y="24" font-size="11" fill="#4d6782">&lt;&lt;component&gt;&gt;</text>
+    <use href="#uml-comp-icon" x="218" y="14" />
+    <text x="125" y="51" font-size="15.5" font-weight="700" fill="#122b44" text-anchor="middle">Burn-Up Analytics</text>
+    <text x="125" y="70" font-size="11.5" fill="#4d657d" text-anchor="middle">fund burn rate, runout forecast</text>
+  </g>
+
+  <!-- 9. Notification Service (Bottom Right) -->
+  <g id="comp-notification-service" transform="translate(900, 600)">
+    <rect width="240" height="88" rx="10" fill="#edf4fa" stroke="#1e3d5c" stroke-width="2" />
+    <text x="14" y="24" font-size="11" fill="#4d6782">&lt;&lt;component&gt;&gt;</text>
+    <use href="#uml-comp-icon" x="208" y="14" />
+    <text x="120" y="51" font-size="15.5" font-weight="700" fill="#122b44" text-anchor="middle">Notification Service</text>
+    <text x="120" y="70" font-size="11.5" fill="#4d657d" text-anchor="middle">push / SMS / email / cap alerts</text>
+  </g>
+
+  <!-- ==================== CONNECTORS & INTERFACES ==================== -->
+  <!-- Color: #166b4f (deep green), stroke-width: 2 -->
+
+  <!-- CONNECTOR 1: Faculty Portal (x=280, y=204) -> Grant & Fund Service (x=535, y=204) -->
+  <g id="conn-grant-alloc">
+    <line x1="280" y1="204" x2="286" y2="204" stroke="#166b4f" stroke-width="2" />
+    <path d="M 286 196 A 8 8 0 0 1 286 212" stroke="#166b4f" stroke-width="2" fill="none" />
+    <line x1="294" y1="204" x2="523" y2="204" stroke="#166b4f" stroke-width="2" />
+    <circle cx="528" cy="204" r="5" stroke="#166b4f" stroke-width="2" fill="#ffffff" />
+    <line x1="533" y1="204" x2="535" y2="204" stroke="#166b4f" stroke-width="2" />
+    <!-- Labels -->
+    <text x="408" y="174" font-size="12" font-weight="700" fill="#122b44" text-anchor="middle">IGrantAllocation</text>
+    <text x="408" y="190" font-size="10.5" fill="#52687c" text-anchor="middle">expense claim + procurement -&gt; Balance &amp; Cap Check &lt;-</text>
+  </g>
+
+  <!-- CONNECTOR 2: Grant & Fund Service (x=785, y=204) -> Dean Console (x=1035, y=204) -->
+  <g id="conn-dean-gov">
+    <line x1="785" y1="204" x2="787" y2="204" stroke="#166b4f" stroke-width="2" />
+    <circle cx="792" cy="204" r="5" stroke="#166b4f" stroke-width="2" fill="#ffffff" />
+    <line x1="797" y1="204" x2="1021" y2="204" stroke="#166b4f" stroke-width="2" />
+    <path d="M 1027 196 A 8 8 0 0 0 1027 212" stroke="#166b4f" stroke-width="2" fill="none" />
+    <line x1="1027" y1="204" x2="1035" y2="204" stroke="#166b4f" stroke-width="2" />
+    <!-- Labels -->
+    <text x="910" y="174" font-size="12" font-weight="700" fill="#122b44" text-anchor="middle">IDeanGovernance</text>
+    <text x="910" y="190" font-size="10.5" fill="#52687c" text-anchor="middle">cap override + fund approval &lt;-&gt; policy decision</text>
+  </g>
+
+  <!-- CONNECTOR 3: Grant & Fund Service -> Publication Engine (Elbow down-left) -->
+  <g id="conn-pub-engine">
+    <line x1="580" y1="248" x2="580" y2="254" stroke="#166b4f" stroke-width="2" />
+    <path d="M 572 254 A 8 8 0 0 0 588 254" stroke="#166b4f" stroke-width="2" fill="none" />
+    <path d="M 580 262 L 580 286 L 300 286 L 300 369" stroke="#166b4f" stroke-width="2" fill="none" />
+    <circle cx="300" cy="374" r="5" stroke="#166b4f" stroke-width="2" fill="#ffffff" />
+    <line x1="300" y1="379" x2="300" y2="380" stroke="#166b4f" stroke-width="2" />
+    <!-- Labels -->
+    <text x="440" y="266" font-size="12" font-weight="700" fill="#122b44" text-anchor="middle">IPublicationMetrics</text>
+    <text x="440" y="280" font-size="10.5" fill="#52687c" text-anchor="middle">grant link + manuscript DOI -&gt; citation &amp; indexing check &lt;-</text>
+  </g>
+
+  <!-- CONNECTOR 4: Grant & Fund Service -> Grant & Audit Store (Straight down) -->
+  <g id="conn-audit-store">
+    <line x1="660" y1="248" x2="660" y2="254" stroke="#166b4f" stroke-width="2" />
+    <path d="M 652 254 A 8 8 0 0 0 668 254" stroke="#166b4f" stroke-width="2" fill="none" />
+    <line x1="660" y1="262" x2="660" y2="369" stroke="#166b4f" stroke-width="2" />
+    <circle cx="660" cy="374" r="5" stroke="#166b4f" stroke-width="2" fill="#ffffff" />
+    <line x1="660" y1="379" x2="660" y2="380" stroke="#166b4f" stroke-width="2" />
+    <!-- Labels placed beside vertical line below elbow line -->
+    <text x="674" y="342" font-size="12" font-weight="700" fill="#122b44">IAuditLedgerStore</text>
+    <text x="674" y="356" font-size="10.5" fill="#52687c">read/write grants, immutable audit log</text>
+  </g>
+
+  <!-- CONNECTOR 5: Grant & Fund Service -> Co-Author Service (Elbow down-right) -->
+  <g id="conn-coauthor-flow">
+    <line x1="740" y1="248" x2="740" y2="254" stroke="#166b4f" stroke-width="2" />
+    <path d="M 732 254 A 8 8 0 0 0 748 254" stroke="#166b4f" stroke-width="2" fill="none" />
+    <path d="M 740 262 L 740 315 L 1020 315 L 1020 369" stroke="#166b4f" stroke-width="2" fill="none" />
+    <circle cx="1020" cy="374" r="5" stroke="#166b4f" stroke-width="2" fill="#ffffff" />
+    <line x1="1020" y1="379" x2="1020" y2="380" stroke="#166b4f" stroke-width="2" />
+    <!-- Labels -->
+    <text x="880" y="295" font-size="12" font-weight="700" fill="#122b44" text-anchor="middle">ICoAuthorWorkflow</text>
+    <text x="880" y="309" font-size="10.5" fill="#52687c" text-anchor="middle">co-author review request &lt;-&gt; digital signoff token</text>
+  </g>
+
+  <!-- CONNECTOR 6: Publication Engine -> Indexing Adapter (Straight down) -->
+  <g id="conn-indexing-adapter">
+    <line x1="300" y1="468" x2="300" y2="474" stroke="#166b4f" stroke-width="2" />
+    <path d="M 292 474 A 8 8 0 0 0 308 474" stroke="#166b4f" stroke-width="2" fill="none" />
+    <line x1="300" y1="482" x2="300" y2="589" stroke="#166b4f" stroke-width="2" />
+    <circle cx="300" cy="594" r="5" stroke="#166b4f" stroke-width="2" fill="#ffffff" />
+    <line x1="300" y1="599" x2="300" y2="600" stroke="#166b4f" stroke-width="2" />
+    <!-- Labels -->
+    <text x="314" y="530" font-size="12" font-weight="700" fill="#122b44">IExternalIndexing</text>
+    <text x="314" y="544" font-size="10.5" fill="#52687c">DOI query -&gt; Scopus, WoS &amp; CrossRef citations</text>
+  </g>
+
+  <!-- CONNECTOR 7: Grant & Audit Store -> Burn-Up Analytics Engine (Straight down) -->
+  <g id="conn-burnup-engine">
+    <line x1="660" y1="468" x2="660" y2="474" stroke="#166b4f" stroke-width="2" />
+    <path d="M 652 474 A 8 8 0 0 0 668 474" stroke="#166b4f" stroke-width="2" fill="none" />
+    <line x1="660" y1="482" x2="660" y2="589" stroke="#166b4f" stroke-width="2" />
+    <circle cx="660" cy="594" r="5" stroke="#166b4f" stroke-width="2" fill="#ffffff" />
+    <line x1="660" y1="599" x2="660" y2="600" stroke="#166b4f" stroke-width="2" />
+    <!-- Labels -->
+    <text x="674" y="530" font-size="12" font-weight="700" fill="#122b44">IBurnUpAnalytics</text>
+    <text x="674" y="544" font-size="10.5" fill="#52687c">historical spend + milestones -&gt; velocity &amp; runout &lt;-</text>
+  </g>
+
+  <!-- CONNECTOR 8: Co-Author Service -> Notification Service (Straight down) -->
+  <g id="conn-notification-service">
+    <line x1="1020" y1="468" x2="1020" y2="474" stroke="#166b4f" stroke-width="2" />
+    <path d="M 1012 474 A 8 8 0 0 0 1028 474" stroke="#166b4f" stroke-width="2" fill="none" />
+    <line x1="1020" y1="482" x2="1020" y2="589" stroke="#166b4f" stroke-width="2" />
+    <circle cx="1020" cy="594" r="5" stroke="#166b4f" stroke-width="2" fill="#ffffff" />
+    <line x1="1020" y1="599" x2="1020" y2="600" stroke="#166b4f" stroke-width="2" />
+    <!-- Labels -->
+    <text x="1034" y="530" font-size="12" font-weight="700" fill="#122b44">INotification</text>
+    <text x="1034" y="544" font-size="10.5" fill="#52687c">status event + alert trigger -&gt; delivery result &lt;-</text>
+  </g>
+
+</svg>
+  </div>
+</body>
+</html>
