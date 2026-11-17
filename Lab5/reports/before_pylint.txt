@@ -1,0 +1,10 @@
+************* Module expense_review
+baseline\expense_review.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+baseline\expense_review.py:1:0: C0410: Multiple imports on one line (math, json) (multiple-imports)
+baseline\expense_review.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+baseline\expense_review.py:1:0: W0611: Unused import math (unused-import)
+baseline\expense_review.py:1:0: W0611: Unused import json (unused-import)
+
+-----------------------------------
+Your code has been rated at 5.83/10
+

@@ -26,3 +26,6 @@ dist/
 # Student Guidelines docx
 *.docx
 scratch_render.py
+
+# Lab 1 requirements deliverable
+!Lab1/requirements_table.docx

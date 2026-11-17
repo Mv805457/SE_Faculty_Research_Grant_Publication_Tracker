@@ -6,13 +6,29 @@
 [![Verification](https://img.shields.io/badge/RTM-100%25%20Traceability-brightgreen.svg)](1-RE/RE_Document.md#5-requirements-traceability-matrix-rtm)
 
 > **Individual Project Submission**  
-> **Course:** Software Engineering (Lab 3)  
+> **Course:** Software Engineering\
 > **Problem Statement #09:** Faculty Research Grant & Publication Tracker  
 > **Student Name:** Madhav Vinod  
 > **USN:** PES1UG24CS254  
 > **Target Organization:** Academic Deanery of Research & Development  
 
 ---
+
+## Software engineering lab submissions
+
+| Lab | Submission | Evidence |
+|---|---|---|
+| [1 · Requirements engineering](Lab1/) | Original requirements, use cases and procurement flow | [Requirements table](Lab1/requirements_table.docx) and [use-case diagram](Lab1/procurement_use_case.png) |
+| [2 · Agile planning](Lab2/) | Kanban, Scrum and a bug register for expense review | [Local board](Lab2/board.html), three PDF snapshots and Jira import CSVs |
+| [3 · Architecture](Lab3/) | Nine components and eight interfaces | [Editable diagram](Lab3/architecture.drawio) and [rendered diagram](2-Architectural-Diagram/architecture_diagram.png) |
+| [4 · AI-assisted debugging](Lab4/) | [Course 09 Tic-Tac-Toe](Lab4/09_tic_tac_toe/) and faculty-themed Grant Desk | Before/after recordings for both games and 11 regression tests |
+| [5 · Static analysis](Lab5/) | [Course 09 Movie Seats](Lab5/09_movie_seats/) and faculty expense-claim validation | [Analyzer reports](Lab5/reports/) and [reflection](Lab5/reflection.md) |
+| [6 · Line and branch coverage](Lab6/) | Assigned Bookstore Trade-In module | [Coverage report](Lab6/coverage_report.md) and original screenshots |
+| [7 · Fuzz testing](Lab7/) | Hypothesis tests for trade-in batches and scanner telemetry | [Test suite](Lab7/FuzzTest_bookstore_trade_in.py) and original screenshot |
+
+The course organization publishes Tic-Tac-Toe and Movie Seats as problem 09. The SE_67 submission explicitly identifies Bookstore Trade-In as the assigned Lab 6/7 problem.
+
+The design sections below describe the proposed faculty portal. Executed lab measurements are recorded in Labs 4–7. Lab 1 preserves the original requirement identifiers. The later expanded specification in 1-RE uses its own numbering and performance targets.
 
 ## 1. Problem Context & Overview
 

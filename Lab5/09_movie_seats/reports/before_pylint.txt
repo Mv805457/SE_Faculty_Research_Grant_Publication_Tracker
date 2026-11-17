@@ -1,0 +1,28 @@
+************* Module theater_system
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:40:0: C0301: Line too long (104/100) (line-too-long)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:9:0: W0102: Dangerous default value [] as argument (dangerous-default-value)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:12:27: C0209: Formatting a regular string which could be a f-string (consider-using-f-string)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:15:23: C0209: Formatting a regular string which could be a f-string (consider-using-f-string)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:21:4: W0702: No exception type(s) specified (bare-except)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:24:0: C0116: Missing function or method docstring (missing-function-docstring)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:27:0: C0116: Missing function or method docstring (missing-function-docstring)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:28:4: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:28:8: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:28:8: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:31:0: C0116: Missing function or method docstring (missing-function-docstring)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:32:4: C0103: Constant name "shows" doesn't conform to UPPER_CASE naming style (invalid-name)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:32:4: W0603: Using the global statement (global-statement)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:33:4: C0103: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:33:8: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:33:8: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:37:0: C0116: Missing function or method docstring (missing-function-docstring)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:37:0: C0103: Function name "printSeatingSummary" doesn't conform to snake_case naming style (invalid-name)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:38:8: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
+C:\Users\madha\Documents\Codex\2026-11-17\https-github-com-mv805457-se-faculty\work\starters\theater\theater_system.py:42:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+-----------------------------------
+Your code has been rated at 5.00/10
+

@@ -1,0 +1,9 @@
+{
+  "cap_paise": 100000,
+  "claims": [
+    {"invoice": "GPU-01", "paise": 62000},
+    {"invoice": " gpu-01 ", "paise": 62000},
+    {"invoice": "LAB-02", "paise": 38000},
+    {"invoice": "SHIP-03", "paise": 1}
+  ]
+}

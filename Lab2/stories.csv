@@ -1,0 +1,8 @@
+﻿Issue Type,Summary,Description,Priority,Labels
+Story,ST-01 Log a procurement claim,"FR-001 | Given 100,000 paise, accept a 62,000-paise invoice once and show 38,000 remaining.",Medium,grant-tracker
+Story,ST-02 Request a Dean override,FR-002 | Route the excess to the Dean. The original balance remains available until an authorized reallocation succeeds.,Medium,grant-tracker
+Story,ST-03 Register a publication DOI,FR-003 | Reject duplicate DOIs and associate the new publication with the selected grant.,Medium,grant-tracker
+Story,ST-04 Collect co-author consent,"FR-005 | With two listed authors, the first approval leaves the manuscript pending. The second clears it.",Medium,grant-tracker
+Story,ST-05 Forecast grant exhaustion,FR-006 | Show a projected runout date from posted expenses. Show insufficient data on an empty history.,Medium,grant-tracker
+Story,ST-06 Verify the audit trail,NFR-001 | Changing one recorded expense makes chain verification identify the affected entry.,Medium,grant-tracker
+Story,ST-07 Measure dashboard latency,"NFR-002 | At 150 TPS and 2,000 concurrent sessions, measure p95 below 250 ms and p99 below 450 ms.",Medium,grant-tracker

@@ -1,0 +1,62 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam monochrome false
+skinparam actorStyle awesome
+
+skinparam usecase {
+    BackgroundColor #EBF3FB
+    BorderColor #2B579A
+    ArrowColor #2B579A
+}
+
+actor "Faculty Researcher\n(Primary Actor)" as FR
+actor "Research Dean\n(Primary Actor / Approver)" as RD
+actor "Co-Author\n(Secondary Actor)" as CA
+actor "Academic Indexing Service\n(External System)" as AIS << System >>
+
+rectangle "Faculty Research Grant & Publication Tracker Portal" {
+    
+    usecase "UC-01: Log Procurement Expense" as UC1
+    usecase "UC-02: Validate Grant Budget Balance" as UC2
+    usecase "UC-03: Flag Overdraft & Request Dean Override" as UC3
+    usecase "UC-04: Submit Publication Details" as UC4
+    usecase "UC-05: Trigger Co-Author Verification" as UC5
+    usecase "UC-06: Ingest Citation Metrics via DOI" as UC6
+    usecase "UC-07: Track Fund Burn-Up & Analytics" as UC7
+    usecase "UC-08: Authorize Budget Overdraft Override" as UC8
+    usecase "UC-09: Approve Co-Author Contribution" as UC9
+    usecase "UC-10: Review & Approve Grant Closure" as UC10
+    usecase "UC-11: Authenticate User Session" as UC11
+    
+    ' Core relationships for Faculty Researcher
+    FR --> UC1
+    FR --> UC4
+    FR --> UC7
+    FR --> UC10
+
+    ' Core relationships for Research Dean
+    RD --> UC8
+    RD --> UC7
+    RD --> UC10
+
+    ' Core relationships for Co-Author
+    CA --> UC9
+
+    ' External System interaction
+    UC6 --> AIS
+
+    ' Include Relationships
+    UC1 .> UC2 : <<include>>
+    UC1 .> UC11 : <<include>>
+    UC4 .> UC5 : <<include>>
+    UC8 .> UC11 : <<include>>
+    UC10 .> UC11 : <<include>>
+
+    ' Extend Relationships
+    UC3 .> UC1 : <<extend>>\n[Expense > Balance]
+    UC6 .> UC4 : <<extend>>\n[DOI provided]
+}
+
+@enduml

@@ -1,0 +1,6 @@
+﻿Issue Type,Summary,Description,Priority,Labels
+Bug,EXP-01 Negative expense raises balance,Lab 5 | Submit -10 against 100. Baseline ends at 110. Expected rejection leaves 100.,High,grant-tracker
+Bug,EXP-02 Duplicate invoice paid twice,Lab 5 | Submit two identical A invoices of 20 against 100. Baseline leaves 60. Expected balance is 80.,High,grant-tracker
+Bug,EXP-03 Exact-balance claim skipped,Lab 5 | Submit 100 against 100. Baseline pays nothing. Expected remaining balance is zero.,Medium,grant-tracker
+Bug,EXP-04 Non-integer input aborts review,Lab 5 | Submit a string amount. The baseline assertion aborts the batch. Expected a row-level rejection.,Medium,grant-tracker
+Bug,EXP-05 Missing invoice aborts review,Lab 5 | Submit a claim of 1 without an invoice key. Baseline raises KeyError. Expected rejection with row number.,Medium,grant-tracker
